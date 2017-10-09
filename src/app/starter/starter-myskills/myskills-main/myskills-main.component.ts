@@ -8,7 +8,8 @@ declare var AdminLTE: any;
   templateUrl: './myskills-main.component.html'
 })
 export class MySkillsMainComponent implements OnInit {
-
+  title = 'Compétences';
+  role = 'pilote';
   constructor() { }
 
   ngOnInit() {
