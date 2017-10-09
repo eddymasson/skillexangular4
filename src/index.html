@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap 3.3.7 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Qub_Header -->
+    <link href="http://qualitybox/qubheader/css/qubHeader.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skillex</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Select2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Adminlte lib -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.3.1/js/app.min.js" type="text/javascript"></script>
+        <!-- Include qubHeader.js-->
+        <script src="http://qualitybox/qubheader/js/qubHeader.min.js"></script>
+        <!-- Select2 -->
+</head>
+
+<body hold-transition>
+    <app-root>Loading ...</app-root>
+
+ 
+
+    <script type="text/javascript">
+        $(function () {
+            //Données dures à remplacer par les données envoyées dans le POST 
+            appNom = "Skillex";
+            user = "Nils Langen";
+            userId = 2;
+            admin = true;
+            team = "AT MMA";
+            teamId = 7;
+            role = "pilote";
+            apiKey = "f3a7da7e66b0";
+            qubAdress = "http://qualitybox";
+
+            initQubHeader(appNom, user, userId, admin, team, teamId, role, apiKey, qubAdress);
+
+
+        });
+    </script>
+<script type="text/javascript">
+    $('select').select2();
+</script>
+</body>
+
+</html>
