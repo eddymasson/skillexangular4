@@ -18,7 +18,10 @@
       <div class="box box-widget widget-user ">
         <!-- Add the bg color to the header using any of the bg-* classes -->
         <div class="widget-user-header bg-aqua-active">
-          <h3 class="widget-user-username">Eddy Masson</h3>
+          <h3 class="widget-user-username">Eddy Masson </h3>
+          <li *ngFor="let user of users">
+            <span >{{user.id}}</span> {{user.name}}
+          </li>
           <h5 class="widget-user-desc">Développeur</h5>
         </div>
         <div class="widget-user-image">
@@ -70,7 +73,9 @@
       </div>
       <!-- /.widget-user -->
     </div>
-
+ 
   </section>
+
   <!-- /.content -->
 </div>
+
