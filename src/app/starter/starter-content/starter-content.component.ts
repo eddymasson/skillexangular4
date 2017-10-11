@@ -11,12 +11,6 @@ export class StarterContentComponent implements OnInit {
 
   constructor() { }
 
-  user = {
-    name:"Eddy",
-    role:"maitre",
-    lastname:"Masson"
-  }
-  
   ngOnInit() {
     // Update the AdminLTE layouts
     AdminLTE.init();

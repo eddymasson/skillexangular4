@@ -12,12 +12,6 @@ export class MySkillsMainComponent implements OnInit {
   role = 'pilote';
   constructor() { }
 
-  // Classe user
-  user = {
-    name:"Eddy",
-    role:"maitre",
-    lastname:"Masson"
-  }
   ngOnInit() {
     // Update the AdminLTE layouts
     AdminLTE.init();

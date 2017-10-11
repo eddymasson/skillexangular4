@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import {User} from '../../../class/user'
+import {Skills} from '../../../class/skills'
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
-export class User {
-  id: number;
-  name: string;
-}
 
 @Component({
   selector: 'app-mygroup-main',
@@ -16,22 +13,23 @@ export class User {
 export class MyGroupMainComponent implements OnInit {
 
   users: User[] = [
-  { id: 11, name: 'Mr. Nice' },
-  { id: 12, name: 'Narco' }
+  { id: 1, name: 'Eddy'},
+  { id: 2, name: 'Pierre Yves'},
+  { id: 3, name: 'Sebastien'},
+  { id: 4, name: 'Yëlan' }
+
   ];
 
+  myskills: Skills[] = [
+    { id: 1, name: 'PHP', level:3},
+    { id: 2, name: 'Oracle', level:3}
+    ];
+  
 
   constructor() { 
 
   }
 
-// Classe user
-user = {
-  name:"Eddy",
-  role:"maitre",
-  lastname:"Masson",
-  job:"Développeur"
-}
   ngOnInit() {
     // Update the AdminLTE layouts
     AdminLTE.init();

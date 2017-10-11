@@ -11,7 +11,7 @@
       <div class="pull-left info">
         <p>Gestion des compétences</p>
         <!-- Status -->
-        <a href="#"><i class="fa fa-circle text-success"></i> Vous êtes : {{user.role}}</a>
+        <a href="#"><i class="fa fa-circle text-success"></i> Vous êtes : {{role}}</a>
       </div>
     </div>
 
@@ -34,7 +34,6 @@
       <li><a  *ngIf="role=='pilote'||role=='maitre'" routerLink="/starter" routerLinkActive="active" ><i class="fa fa-home"></i> <span>Accueil</span></a></li>
       <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/mygroup" routerLinkActive="active" ><i class="fa fa-group"></i> <span>Compétences équipe</span></a></li>
       <li><a routerLink="/myskills" routerLinkActive="active" ><i class="fa fa-gear"></i> <span>Mes compétences</span></a></li>
-      <li><a routerLink="/skillsmanagement" routerLinkActive="active" ><i class="fa fa-list"></i> <span>liste des compétences</span></a></li>
       <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/starter" routerLinkActive="active" ><i class="fa fa-check"></i> <span>Valider des compétences</span></a></li>
       <li class="treeview">
         <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
