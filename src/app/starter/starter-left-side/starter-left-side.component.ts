@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarterLeftSideComponent implements OnInit {
 
-  role = 'pilote';
+  role = 'utilisateur';
   constructor() { }
 
   ngOnInit() {

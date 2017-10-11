@@ -29,7 +29,7 @@ Running the application
 ------------
 - On the folder project
 ```
-ng serve
+ng serve ou npm serve
 ```
 - For starter page Navigate to [http://localhost:4200/](http://localhost:4200/)
 - For admin page Navigate to [http://localhost:4200/admin](http://localhost:4200/admin)
