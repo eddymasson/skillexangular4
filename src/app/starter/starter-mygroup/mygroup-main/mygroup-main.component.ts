@@ -26,6 +26,11 @@ export class MyGroupMainComponent implements OnInit {
     ];
   
 
+    // Method in component class
+trackByFn(myskills, level) {
+  return myskills.level;
+}
+
   constructor() { 
 
   }
