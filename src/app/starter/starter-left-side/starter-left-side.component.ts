@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./starter-left-side.component.css']
 })
 export class StarterLeftSideComponent implements OnInit {
-
-  role = 'utilisateur';
+  user = {
+    name:"Eddy",
+    role: "maitre",
+    lastname:"Masson"
+  }
+  role = "pilote";
   constructor() { }
 
   ngOnInit() {

@@ -15,6 +15,8 @@ import { MyGroupMainComponent } from './starter/starter-mygroup/mygroup-main/myg
 //Import des composants liés aux compétences
 import { StarterMySkillsComponent } from './starter/starter-myskills/starter-myskills.component';
 import { MySkillsMainComponent } from './starter/starter-myskills/myskills-main/myskills-main.component';
+import { StarterSkillsManagementComponent} from './starter/starter-skills-management/starter-skills-management.component';
+import { SkillsManagementMainComponent} from './starter/starter-skills-management/skillsmanagement-main/skillsmanagement-main.component';
 import { StarterControlSidebarComponent } from './starter/starter-control-sidebar/starter-control-sidebar.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
@@ -38,7 +40,9 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
     StarterFooterComponent,
     StarterMyGroupComponent,
     StarterMySkillsComponent,
-    StarterControlSidebarComponent
+    StarterControlSidebarComponent,
+    StarterSkillsManagementComponent,
+    SkillsManagementMainComponent
   ],
   imports: [
     BrowserModule,
