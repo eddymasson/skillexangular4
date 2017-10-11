@@ -78,14 +78,32 @@
       <div class="box box-widget widget-user ">
         <!-- Add the bg color to the header using any of the bg-* classes -->
         <div class="widget-user-header bg-aqua-active">
+          
           <h3 class="widget-user-username">{{user.name}} </h3>
           
           <h5 class="widget-user-desc">Développeur</h5>
+          <div class="widget-user-image">
+              <img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAA0BAAAAJDMwOGM0YmNiLWEyM2EtNDJiNS1hNGUzLTIwNzQ2NTZjNzdlYg.jpg" alt="User Avatar">
+            </div>
 
         </div>
-        </div>
-        <div *ngFor="let skills of myskills">{{skills.level}} {{skills.name}}</div>
         
+        <div class="nav-tabs-custom">
+            
+             <div class="tab-content">
+                <hr>
+        <strong><i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
+        <div *ngFor="let skills of myskills">
+          <div class="col-md-3">
+            <span class="label label-success  col-md-12">{{skills.name}}</span>
+            <div>
+              <i *ngFor="let skills of myskills" class="fa fa-star"></i>
+            </div>
+          </div>  
+        </div>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
   </section>
