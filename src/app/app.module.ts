@@ -12,6 +12,9 @@ import { StarterFooterComponent } from './starter/starter-footer/starter-footer.
 //Imports des composants liés aux groupes
 import { StarterMyGroupComponent } from './starter/starter-mygroup/starter-mygroup.component';
 import { MyGroupMainComponent } from './starter/starter-mygroup/mygroup-main/mygroup-main.component';
+//Imports des composants liés aux recherches
+import { StarterSearchComponent } from './starter/starter-search/starter-search.component';
+import { SearchMainComponent } from './starter/starter-search/search-main/search-main.component';
 //Import des composants liés aux compétences
 import { StarterMySkillsComponent } from './starter/starter-myskills/starter-myskills.component';
 import { MySkillsMainComponent } from './starter/starter-myskills/myskills-main/myskills-main.component';
@@ -32,12 +35,14 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
     StarterComponent,
     MySkillsMainComponent,
     MyGroupMainComponent,
+    SearchMainComponent,
     StarterHeaderComponent,
     StarterLeftSideComponent,
     StarterContentComponent,
     StarterFooterComponent,
     StarterMyGroupComponent,
     StarterMySkillsComponent,
+    StarterSearchComponent,
     StarterControlSidebarComponent
   ],
   imports: [
