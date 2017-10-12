@@ -9,6 +9,10 @@ declare var AdminLTE: any;
 })
 export class StarterContentComponent implements OnInit {
 
+  role = 'pilote';
+
+  
+
   constructor() { }
 
   ngOnInit() {

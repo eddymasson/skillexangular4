@@ -18,6 +18,8 @@ import { SearchMainComponent } from './starter/starter-search/search-main/search
 //Import des composants liés aux compétences
 import { StarterMySkillsComponent } from './starter/starter-myskills/starter-myskills.component';
 import { MySkillsMainComponent } from './starter/starter-myskills/myskills-main/myskills-main.component';
+import { StarterListComponent } from './starter/starter-list/starter-list.component';
+import { ListMainComponent } from './starter/starter-list/list-main/list-main.component';
 import { StarterControlSidebarComponent } from './starter/starter-control-sidebar/starter-control-sidebar.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
@@ -43,7 +45,9 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
     StarterMyGroupComponent,
     StarterMySkillsComponent,
     StarterSearchComponent,
-    StarterControlSidebarComponent
+    StarterControlSidebarComponent,
+    StarterListComponent,
+    ListMainComponent,
   ],
   imports: [
     BrowserModule,

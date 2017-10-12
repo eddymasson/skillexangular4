@@ -12,6 +12,8 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
 
+  role = 'pilote';
+
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
