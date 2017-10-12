@@ -7,7 +7,7 @@ declare var AdminLTE: any;
 
 @Component({
   selector: 'app-search-main',
-  templateUrl: './search-main.component.html'
+  templateUrl: './search-main.component.html',
 })
 
 export class SearchMainComponent implements OnInit {
