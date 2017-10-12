@@ -26,6 +26,7 @@ import { AdminContentComponent } from './admin/admin-content/admin-content.compo
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admin-control-sidebar.component';
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
+import {Ng2Webstorage} from 'ngx-webstorage';
 
 
 @NgModule({
@@ -46,6 +47,14 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
     StarterControlSidebarComponent
   ],
   imports: [
+    BrowserModule,
+    Ng2Webstorage,
+    //Ng2Webstorage.forRoot({ prefix: 'custom', separator: '.', caseSensitive:true }) 
+		// The forRoot method allows to configure the prefix, the separator and the caseSensitive option used by the library
+		// Default values:
+		// prefix: "ng2-webstorage"
+		// separator: "|"
+		// caseSensitive: false
     BrowserModule,
     AppRoutingModule,
     AdminModule

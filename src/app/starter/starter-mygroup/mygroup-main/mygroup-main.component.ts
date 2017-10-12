@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import du module de stockage session ngx-webstorage 
+import {LocalStorageService, SessionStorageService} from 'ngx-webstorage';
 import {User} from '../../../class/user'
 import {Skills} from '../../../class/skills'
 // Variable in assets/js/scripts.js file
@@ -12,6 +14,7 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
 
+
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
@@ -19,6 +22,7 @@ export class MyGroupMainComponent implements OnInit {
   { id: 4, name: 'Yëlan' }
 
   ];
+
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
@@ -36,6 +40,3 @@ export class MyGroupMainComponent implements OnInit {
   }
 
 }
-
-
-
