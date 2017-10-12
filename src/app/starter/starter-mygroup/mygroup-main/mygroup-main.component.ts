@@ -22,7 +22,10 @@ export class MyGroupMainComponent implements OnInit {
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
+    { id: 2, name: 'Oracle', level:3},
+    { id: 3, name: 'Html', level:2},
+    { id: 4, name: 'Css', level:4},
+    { id: 5, name: 'Html', level:5}
     ];
   
 
