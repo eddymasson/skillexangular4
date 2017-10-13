@@ -30,6 +30,7 @@ import { AdminControlSidebarComponent } from './admin/admin-control-sidebar/admi
 import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboard1.component';
 // import de cool storage gestionnaire de session plus d'infos sur https://github.com/Hacklone/angular2-cool-storage
 import { CoolStorageModule } from 'angular2-cool-storage';
+import { SelectModule } from 'ng2-select';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { CoolStorageModule } from 'angular2-cool-storage';
   imports: [
     //cool storage : import : 
     CoolStorageModule, 
+    SelectModule,
     BrowserModule,
     AppRoutingModule,
     AdminModule

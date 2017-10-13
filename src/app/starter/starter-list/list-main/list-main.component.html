@@ -101,8 +101,13 @@
                     
   
                          
-    
-        
+                    <ng-select  [multiple]="true"
+                    [items]="items"
+                    [disabled]="disabled"
+                    (data)="refreshValue($event)"
+                    (selected)="selected($event)"
+                    (removed)="removed($event)"
+                    placeholder="No city selected"></ng-select>
         
             
             
