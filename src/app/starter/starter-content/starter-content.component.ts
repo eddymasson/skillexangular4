@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { URLSearchParams, } from '@angular/http';
+import { CoolLocalStorage} from '@angular2-cool-storage';
+
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -10,21 +11,26 @@ declare var AdminLTE: any;
   templateUrl: './starter-content.component.html',
   styleUrls: ['./starter-content.component.css']
 })
-export class StarterContentComponent implements OnInit {
 
+export class StarterContentComponent implements OnInit {
+  localStorage: CoolLocalStorage;
+  constructor(private route: ActivatedRoute, localStorage: CoolLocalStorage) {}
   user = this.route.snapshot.queryParams["user"];
   team = this.route.snapshot.queryParams["id_team"];
   role = this.route.snapshot.queryParams["role"];
 
-  constructor(private route: ActivatedRoute) {
 
-
-   }
 
   ngOnInit() {
     // Update the AdminLTE layouts
 
- 
+    this.localStorage.setItem('role', ('pilote'));
+    //on affiche l'item de session 
+    console.log(this.localStorage.getItem('role'));
+    
+    this.localStorage.setObject('users', {
+      role:'pilote'});
+      console.log(this.localStorage.getItem('users'));
   
   }
 

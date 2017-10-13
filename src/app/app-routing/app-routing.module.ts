@@ -4,6 +4,7 @@ import { StarterComponent } from './../starter/starter.component';
 import { StarterMyGroupComponent } from './../starter/starter-mygroup/starter-mygroup.component';
 //Import des composants liés aux compétences
 import { StarterMySkillsComponent } from './../starter/starter-myskills/starter-myskills.component';
+import { StarterSkillsManagementComponent } from './../starter/starter-skills-management/starter-skills-management.component';
 import { StarterSearchComponent } from './../starter/starter-search/starter-search.component';
 import { StarterListComponent } from './../starter/starter-list/starter-list.component';
 import { AdminComponent } from './../admin/admin.component';
@@ -19,7 +20,9 @@ import { RouterModule } from '@angular/router';
       { path: 'mygroup', component: StarterMyGroupComponent },
       { path: 'search', component: StarterSearchComponent },
       { path: 'myskills', component: StarterMySkillsComponent },
-      { path: 'list' , component: StarterListComponent}
+      { path: 'list' , component: StarterListComponent},
+      { path: 'skills-management' , component: StarterSkillsManagementComponent}
+      
     ])
   ],
   declarations: [],
