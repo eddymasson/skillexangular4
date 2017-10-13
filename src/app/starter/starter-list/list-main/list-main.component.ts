@@ -12,6 +12,9 @@ declare var AdminLTE: any;
 })
 
 export class ListMainComponent implements OnInit {
+    
+
+    
 
   role = 'pilote';
 
@@ -25,20 +28,16 @@ export class ListMainComponent implements OnInit {
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
+    { id: 2, name: 'Oracle', level:3},
+    { id: 3, name: 'HTML', level:2},
+    { id: 4, name: 'CSS', level:4},
+    { id: 5, name: 'JAVA', level:5}
     ];
   
-    public items:Array<string> = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
-    'Berlin', 'Birmingham', 'Bradford', 'Bremen', 'Brussels', 'Bucharest',
-    'Budapest', 'Cologne', 'Copenhagen', 'Dortmund', 'Dresden', 'Dublin', 'Düsseldorf',
-    'Essen', 'Frankfurt', 'Genoa', 'Glasgow', 'Gothenburg', 'Hamburg', 'Hannover',
-    'Helsinki', 'Leeds', 'Leipzig', 'Lisbon', 'Łódź', 'London', 'Kraków', 'Madrid',
-    'Málaga', 'Manchester', 'Marseille', 'Milan', 'Munich', 'Naples', 'Palermo',
-    'Paris', 'Poznań', 'Prague', 'Riga', 'Rome', 'Rotterdam', 'Seville', 'Sheffield',
-    'Sofia', 'Stockholm', 'Stuttgart', 'The Hague', 'Turin', 'Valencia', 'Vienna',
-    'Vilnius', 'Warsaw', 'Wrocław', 'Zagreb', 'Zaragoza'];
+  
+    public items:Array<string> = ['PHP','Oracle','HTML','CSS','JAVA'];
  
-  private value:any = ['Athens'];
+  private value:any = ['JAVA'];
   private _disabledV:string = '0';
   private disabled:boolean = false;
  
@@ -70,6 +69,7 @@ export class ListMainComponent implements OnInit {
       }).join(',');
   }
 
+  
   constructor() { 
 
   }

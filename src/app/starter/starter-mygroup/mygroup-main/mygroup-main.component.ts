@@ -15,15 +15,7 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
 
-<<<<<<< HEAD
-  role = 'pilote';
 
-=======
-  localStorage: CoolLocalStorage;
-  constructor(localStorage: CoolLocalStorage) {
-    this.localStorage = localStorage;   
-}
->>>>>>> 889093c07ec2df3d89e797ab300d4b2b501c2789
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
@@ -47,6 +39,10 @@ trackByFn(myskills, level) {
   return myskills.level;
 }
 
+localStorage: CoolLocalStorage;
+constructor(localStorage: CoolLocalStorage) {
+  this.localStorage = localStorage;   
+}
   ngOnInit() {
     //Définition de la variable de session 
       this.localStorage.setItem('itemKey', ('pilote'));

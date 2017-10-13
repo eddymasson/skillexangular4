@@ -32,6 +32,7 @@ import { AdminDashboard1Component } from './admin/admin-dashboard1/admin-dashboa
 import { CoolStorageModule } from 'angular2-cool-storage';
 
 
+
 @NgModule({
   //Déclaration des divers composants pour pouvoir les utiliser par la suite
   declarations: [

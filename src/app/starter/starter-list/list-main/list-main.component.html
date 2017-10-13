@@ -28,22 +28,23 @@
   
                   <div class="row">
                     <div class="col-md-3">
+                      <h3><strong>Liste des compétences</strong></h3>
                       <div class="box box-solid">
                         <div class="box-header with-border">
-                          <h3 class="box-title">Liste des compétences</h3>
-  
+                          <h3 class="box-title"><strong>Selectionner une compétence</strong></h3>
                           <div class="box-tools">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
                           </div>
                         </div>
-                        
                         <div class="box-body no-padding">
-                          <ul class="nav nav-pills nav-stacked">
                               <div *ngFor="let Skills of myskills">
-                            <li><a routerLink="/myskills" routerLinkActive="active"> {{Skills.name}} 
-                      </a></li></div>
-                             </ul>
+                                  <ul class="nav nav-pills nav-stacked">
+                            <li >
+                              <a routerLink="/myskills" routerLinkActive="active"><strong>{{Skills.name}}</strong></a>
+                            </li>
+                          </ul>
+                          </div>
                         </div>
 
                         
