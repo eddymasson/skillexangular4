@@ -18,6 +18,8 @@ import { SearchMainComponent } from './starter/starter-search/search-main/search
 //Import des composants liés aux compétences
 import { StarterMySkillsComponent } from './starter/starter-myskills/starter-myskills.component';
 import { MySkillsMainComponent } from './starter/starter-myskills/myskills-main/myskills-main.component';
+import { StarterSkillsManagementComponent } from './starter/starter-skills-management/starter-skills-management.component';
+import { SkillsManagementMainComponent } from './starter/starter-skills-management/skills-management-main/skills-management-main.component';
 import { StarterListComponent } from './starter/starter-list/starter-list.component';
 import { ListMainComponent } from './starter/starter-list/list-main/list-main.component';
 import { StarterControlSidebarComponent } from './starter/starter-control-sidebar/starter-control-sidebar.component';
@@ -52,6 +54,8 @@ import { HttpModule} from '@angular/http';
     StarterControlSidebarComponent,
     StarterListComponent,
     ListMainComponent,
+    StarterSkillsManagementComponent,
+    SkillsManagementMainComponent
   ],
   imports: [
     HttpModule ,
