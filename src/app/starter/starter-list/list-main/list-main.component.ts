@@ -25,7 +25,10 @@ export class ListMainComponent implements OnInit {
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
+    { id: 2, name: 'Oracle', level:3},
+    { id: 3, name: 'HTML', level:3},
+    { id: 4, name: 'CSS', level:3},
+    { id: 2, name: 'Java', level:3}
     ];
   
     public items:Array<string> = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
