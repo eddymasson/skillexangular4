@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import { URLSearchParams, } from '@angular/http';
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -9,15 +12,20 @@ declare var AdminLTE: any;
 })
 export class StarterContentComponent implements OnInit {
 
-  role = 'pilote';
+  user = this.route.snapshot.queryParams["user"];
+  team = this.route.snapshot.queryParams["id_team"];
+  role = this.route.snapshot.queryParams["role"];
 
-  
+  constructor(private route: ActivatedRoute) {
 
-  constructor() { }
+
+   }
 
   ngOnInit() {
     // Update the AdminLTE layouts
-    AdminLTE.init();
+
+ 
+  
   }
 
 }

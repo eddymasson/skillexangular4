@@ -15,12 +15,14 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
 
-
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
   { id: 3, name: 'Sebastien'},
   { id: 4, name: 'Yëlan' },
+  {id: 5, name : 'Jerome'},
+  {id : 6, name : 'Geoffrey'},
+  {id : 7, name : 'Geoffrey'},
   
   ];
 
@@ -45,9 +47,9 @@ constructor(localStorage: CoolLocalStorage) {
 }
   ngOnInit() {
     //Définition de la variable de session 
-      this.localStorage.setItem('itemKey', ('pilote'));
+      this.localStorage.setItem('role', ('pilote'));
         //on affiche l'item de session 
-        console.log(this.localStorage.getItem('itemKey'));
+        console.log(this.localStorage.getItem('role'));
         
         this.localStorage.setObject('users', {
           role:'pilote'});
