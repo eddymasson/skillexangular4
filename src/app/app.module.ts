@@ -33,6 +33,7 @@ import { CoolStorageModule } from 'angular2-cool-storage';
 import { SelectModule } from 'ng2-select';
 
 
+
 @NgModule({
   //Déclaration des divers composants pour pouvoir les utiliser par la suite
   declarations: [

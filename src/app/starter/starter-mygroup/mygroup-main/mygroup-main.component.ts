@@ -42,7 +42,6 @@ trackByFn(myskills, level) {
 }
 
 localStorage: CoolLocalStorage;
-
 constructor(localStorage: CoolLocalStorage) {
   this.localStorage = localStorage;   
 }
