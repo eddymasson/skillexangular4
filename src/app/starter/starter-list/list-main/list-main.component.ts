@@ -15,13 +15,7 @@ export class ListMainComponent implements OnInit {
 
   role = 'pilote';
 
-  users: User[] = [
-  { id: 1, name: 'Eddy'},
-  { id: 2, name: 'Pierre Yves'},
-  { id: 3, name: 'Sebastien'},
-  { id: 4, name: 'Yëlan' }
 
-  ];
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
