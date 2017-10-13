@@ -22,8 +22,8 @@ export class MyGroupMainComponent implements OnInit {
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
-  { id: 3, name: 'Sebastien'},
-  { id: 4, name: 'Yëlan' },
+
+  {id : 7, name : 'Geoffrey'},
   
   ];
 

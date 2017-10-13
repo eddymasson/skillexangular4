@@ -1,3 +1,19 @@
+<style>
+  span {
+
+    background-color: #fff;
+     -webkit-animation: random 15s infinite;
+     animation: random 15s infinite;
+  }
+@keyframes  random {
+    15% { background-color: blue; } 
+    30% { background-color: white; } 
+    45% { background-color: red; } 
+    60% { background-color: blue; }
+    75% { background-color: white; }  
+}
+
+</style>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -37,7 +53,7 @@
         <strong><i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
         <div *ngFor="let skills of myskills">
           <div class="col-md-3">
-            <span class="label label-success  col-md-12">{{skills.name}}</span>
+            <span class="label label-success  col-md-12 random">{{skills.name}}</span>
             <div>
               <i *ngFor="let skills of myskills" class="fa fa-star"></i>
             </div>
