@@ -12,7 +12,9 @@ export class StarterComponent implements OnInit, OnDestroy {
   bodyClasses = 'skin-blue sidebar-mini';
   body: HTMLBodyElement = document.getElementsByTagName('body')[0];
 
-  constructor() { }
+  constructor() { 
+   
+  }
 
   ngOnInit() {
     // add the the body classes

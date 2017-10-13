@@ -42,14 +42,15 @@ trackByFn(myskills, level) {
 }
 
 localStorage: CoolLocalStorage;
+
 constructor(localStorage: CoolLocalStorage) {
   this.localStorage = localStorage;   
 }
   ngOnInit() {
     //Définition de la variable de session 
-      this.localStorage.setItem('itemKey', ('pilote'));
+      this.localStorage.setItem('role', ('pilote'));
         //on affiche l'item de session 
-        console.log(this.localStorage.getItem('itemKey'));
+        console.log(this.localStorage.getItem('role'));
         
         this.localStorage.setObject('users', {
           role:'pilote'});
