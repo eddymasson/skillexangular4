@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../../../class/user'
 import {Skills} from '../../../class/skills'
-
+import {SelectModule} from 'ng2-select';
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -12,9 +12,6 @@ declare var AdminLTE: any;
 })
 
 export class ListMainComponent implements OnInit {
-    
-
-    
 
   role = 'pilote';
 
@@ -28,54 +25,42 @@ export class ListMainComponent implements OnInit {
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3},
-<<<<<<< HEAD
-    { id: 3, name: 'HTML', level:2},
-    { id: 4, name: 'CSS', level:4},
-    { id: 5, name: 'JAVA', level:5}
-=======
-    { id: 3, name: 'HTML', level:3},
-    { id: 4, name: 'CSS', level:3},
-    { id: 2, name: 'Java', level:3}
->>>>>>> f030df1565ef84774dbd0fb8c0ab76080261f365
+    { id: 2, name: 'Oracle', level:3}
     ];
   
-  
-    public items:Array<string> = ['PHP','Oracle','HTML','CSS','JAVA'];
- 
-  private value:any = ['JAVA'];
+    public items:Array<string> = ['C++', 'C#', 'oracle', 'grails',
+    'java', 'J2E', '.net', 'Management', 'PERT', 'GANTT',
+    ];
+ 
+  private value:any = {};
   private _disabledV:string = '0';
   private disabled:boolean = false;
- 
+ 
   private get disabledV():string {
     return this._disabledV;
   }
- 
+ 
   private set disabledV(value:string) {
     this._disabledV = value;
     this.disabled = this._disabledV === '1';
   }
- 
+ 
   public selected(value:any):void {
     console.log('Selected value is: ', value);
   }
- 
+ 
   public removed(value:any):void {
     console.log('Removed value is: ', value);
   }
- 
+ 
+  public typed(value:any):void {
+    console.log('New search input: ', value);
+  }
+ 
   public refreshValue(value:any):void {
     this.value = value;
   }
- 
-  public itemsToString(value:Array<any> = []):string {
-    return value
-      .map((item:any) => {
-        return item.text;
-      }).join(',');
-  }
 
-  
   constructor() { 
 
   }
@@ -89,3 +74,6 @@ export class ListMainComponent implements OnInit {
 
 
 
+export class SingleDemoComponent {
+
+}

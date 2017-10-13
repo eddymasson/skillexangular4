@@ -24,61 +24,60 @@
   
                 <section class="content">
 
-                    
+                    <ng-select  [multiple]="true"
+                    [items]="items"
+                    [disabled]="disabled"
+                    (data)="refreshValue($event)"
+                    (selected)="selected($event)"
+                    (removed)="removed($event)"
+                    placeholder="Selectionnez vos compétences"></ng-select>
+  
+                    <div class="col-md-9">
+                      
   
                   <div class="row">
                     <div class="col-md-3">
-                      <h3><strong>Liste des compétences</strong></h3>
                       <div class="box box-solid">
                         <div class="box-header with-border">
-                          <h3 class="box-title"><strong>Selectionner une compétence</strong></h3>
+                          <h3 class="box-title">Liste des compétences</h3>
+  
                           <div class="box-tools">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
                           </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="box-body no-padding">
-                              <div *ngFor="let Skills of myskills">
-                                  <ul class="nav nav-pills nav-stacked">
-                            <li >
-                              <a routerLink="/myskills" routerLinkActive="active"><strong>{{Skills.name}}</strong></a>
-                            </li>
-                          </ul>
-                          </div>
-=======
                         
-                        <!-- Skills List/ boucle-->
-
                         <div class="box-body no-padding">
-                          
+                          <ul class="nav nav-pills nav-stacked">
                               <div *ngFor="let Skills of myskills">
-                                  <ul class="nav nav-pills nav-stacked">
-                            <li><a routerLink="/myskills" routerLinkActive="active"> {{Skills.name}} </a></li>
-                          </ul>
-                          </div>
-                          
->>>>>>> f030df1565ef84774dbd0fb8c0ab76080261f365
+                            <li><a routerLink="/myskills" routerLinkActive="active"> {{Skills.name}} 
+                      </a></li></div>
+                             </ul>
                         </div>
 
                         
-                    <!-- /.box-body -->
+                      
+                        <!-- /.box-body -->
                       </div>
                       <!-- /. box -->
   
                       <!-- /.box -->
                     </div>
 
-                    <div class="col-md-9">
-                      
-                      
+                    
+              
+                        
+  
+                          
                           <!-- /.box-tools -->
                         
                         <!-- /.box-header -->
                         <div class="box-body no-padding">
                           <div class="mailbox-controls">
   
-                        
+                            
+                            
+                              
                               <!-- /.btn-group -->
                             
                             <!-- /.pull-right -->
@@ -108,17 +107,15 @@
                     
   
                          
-                    <ng-select  [multiple]="true"
-                    [items]="items"
-                    [disabled]="disabled"
-                    (data)="refreshValue($event)"
-                    (selected)="selected($event)"
-                    (removed)="removed($event)"
-                    placeholder="No city selected"></ng-select>
+                 
         
             
             
             
          
-         
+          <!-- /.modal-content -->
+        
+        <!-- /.modal-dialog -->
+        
+            <!-- /.form-group -->
           
