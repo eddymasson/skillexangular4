@@ -29,9 +29,15 @@ export class ListMainComponent implements OnInit {
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
     { id: 2, name: 'Oracle', level:3},
+<<<<<<< HEAD
     { id: 3, name: 'HTML', level:2},
     { id: 4, name: 'CSS', level:4},
     { id: 5, name: 'JAVA', level:5}
+=======
+    { id: 3, name: 'HTML', level:3},
+    { id: 4, name: 'CSS', level:3},
+    { id: 2, name: 'Java', level:3}
+>>>>>>> f030df1565ef84774dbd0fb8c0ab76080261f365
     ];
   
   
