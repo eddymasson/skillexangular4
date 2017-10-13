@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// import du module de stockage session cool-storage 
+import { CoolLocalStorage } from 'angular2-cool-storage';
+
 import {User} from '../../../class/user'
 import {Skills} from '../../../class/skills'
 // Variable in assets/js/scripts.js file
@@ -12,32 +15,49 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
 
+<<<<<<< HEAD
   role = 'pilote';
 
+=======
+  localStorage: CoolLocalStorage;
+  constructor(localStorage: CoolLocalStorage) {
+    this.localStorage = localStorage;   
+}
+>>>>>>> 889093c07ec2df3d89e797ab300d4b2b501c2789
   users: User[] = [
   { id: 1, name: 'Eddy'},
   { id: 2, name: 'Pierre Yves'},
   { id: 3, name: 'Sebastien'},
-  { id: 4, name: 'Yëlan' }
-
+  { id: 4, name: 'Yëlan' },
+  
   ];
+
 
   myskills: Skills[] = [
     { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
+    { id: 2, name: 'Oracle', level:3},
+    { id: 3, name: 'Html', level:2},
+    { id: 4, name: 'Css', level:4},
+    { id: 5, name: 'Html', level:5}
     ];
   
 
-  constructor() { 
-
-  }
+    // Method in component class
+trackByFn(myskills, level) {
+  return myskills.level;
+}
 
   ngOnInit() {
+    //Définition de la variable de session 
+      this.localStorage.setItem('itemKey', ('pilote'));
+        //on affiche l'item de session 
+        console.log(this.localStorage.getItem('itemKey'));
+        
+        this.localStorage.setObject('users', {
+          role:'pilote'});
+          console.log(this.localStorage.getItem('users'));
     // Update the AdminLTE layouts
     AdminLTE.init();
   }
 
 }
-
-
-
