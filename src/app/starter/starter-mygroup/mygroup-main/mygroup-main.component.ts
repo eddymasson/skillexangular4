@@ -18,11 +18,7 @@ declare var AdminLTE: any;
 
 export class MyGroupMainComponent implements OnInit {
   user: User;
-<<<<<<< HEAD
   team: Team;
-=======
- 
->>>>>>> e58a4ba738274186412c2d81d692b027aa1c20ec
 
 
   myskills: Skills[] = [
@@ -46,17 +42,10 @@ constructor(localStorage: CoolLocalStorage,private userSrv: SrvUserService,priva
   
 }
   ngOnInit() {
-<<<<<<< HEAD
    let userinfo = this.userSrv.getUserById(6,'9e6babc5542e').subscribe(user => this.user = user);
    console.log(this);
    let teaminfo = this.teamSrv.getTeamById(4,'9e6babc5542e').subscribe(team => this.team = team);
    console.log(this);
-=======
-
- this.userSrv.getUserById(6,'9e6babc5542e').subscribe(user => this.user = user);
-console.log(this);
-  
->>>>>>> e58a4ba738274186412c2d81d692b027aa1c20ec
     //Définition de la variable de session 
   
     // Update the AdminLTE layouts
