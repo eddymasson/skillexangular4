@@ -16,8 +16,8 @@ declare var AdminLTE: any;
 })
 
 export class MyGroupMainComponent implements OnInit {
-
   user: User;
+ 
 
 
   myskills: Skills[] = [
@@ -38,10 +38,13 @@ localStorage: CoolLocalStorage;
 
 constructor(localStorage: CoolLocalStorage,private userSrv: SrvUserService) {
   this.localStorage = localStorage;   
+  
 }
   ngOnInit() {
-   let userinfo = this.userSrv.getUserById(6,'9e6babc5542e').subscribe(user => this.user = user);
-   console.log(this);
+
+ this.userSrv.getUserById(6,'9e6babc5542e').subscribe(user => this.user = user);
+console.log(this);
+  
     //Définition de la variable de session 
   
     // Update the AdminLTE layouts
