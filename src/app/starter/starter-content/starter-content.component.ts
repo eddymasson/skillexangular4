@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { URLSearchParams, } from '@angular/http';
-import { CoolLocalStorage} from '@angular2-cool-storage';
+import { CoolLocalStorage } from 'angular2-cool-storage';
 
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
@@ -24,7 +24,7 @@ export class StarterContentComponent implements OnInit {
   ngOnInit() {
     // Update the AdminLTE layouts
 
-    this.localStorage.setItem('role', ('pilote'));
+    this.localStorage.setItem('role', 'pilote');
     //on affiche l'item de session 
     console.log(this.localStorage.getItem('role'));
     
