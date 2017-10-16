@@ -22,26 +22,26 @@
       <small>Si ce texte s'affiche le routing fonctionne</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Skillex</a></li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Skillex </a></li>
       <li class="active">Equipe</li>
     </ol>
   </section>
-
+  <!--Votre ID est  {{user.info.id}} votre nom est {{user.info.nom}} votre prénom est {{user.info.prenom}} votre mail est {{user.info.mail}} vous êtes {{user.info.jobname}} vous avez été créé le  {{user.info.c}}
   <!-- Main content -->
   <section class="content">
   
-    <div *ngFor="let user of users">
+    <!-- <div *ngFor="let user of users"> -->
     <div class="col-md-4">
-      <!-- Widget: user widget style 1 -->
+      Widget: user widget style 1
       <div class="box box-widget widget-user ">
         <!-- Add the bg color to the header using any of the bg-* classes -->
         <div class="widget-user-header bg-aqua-active">
           
-          <h3 class="widget-user-username">{{user.name}} </h3>
+          <h3 class="widget-user-username"> {{user.info.nom}}  {{user.info.prenom}} </h3>
           
-          <h5 class="widget-user-desc">Développeur</h5>
+          <h5 class="widget-user-desc">{{user.info.mail}}</h5>
           <div class="widget-user-image">
-              <img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAA0BAAAAJDMwOGM0YmNiLWEyM2EtNDJiNS1hNGUzLTIwNzQ2NTZjNzdlYg.jpg" alt="User Avatar">
+              <img class="img-circle" src="https://vignette.wikia.nocookie.net/injusticegodsamongus/images/3/38/Superman_avatar.jpeg/revision/latest?cb=20130330035714" alt="User Avatar">
             </div>
 
         </div>
@@ -67,10 +67,9 @@
         </div>
       </div>
     </div>
-  </div>
   </section>
 
 
-  <!-- /.content -->
-</div>
+  <!-- /.content 
+</div>-->
 

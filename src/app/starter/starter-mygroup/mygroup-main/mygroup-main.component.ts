@@ -40,7 +40,7 @@ constructor(localStorage: CoolLocalStorage,private userSrv: SrvUserService) {
   this.localStorage = localStorage;   
 }
   ngOnInit() {
-   let userinfo = this.userSrv.getUserById(5,'9e6babc5542e').subscribe(user => this.user = user);
+   let userinfo = this.userSrv.getUserById(6,'9e6babc5542e').subscribe(user => this.user = user);
    console.log(this);
     //Définition de la variable de session 
   
