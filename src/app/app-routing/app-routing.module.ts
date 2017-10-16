@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', redirectTo: 'starter', pathMatch: 'full' },
+      { path: '', redirectTo: 'mygroup', pathMatch: 'full' },
       { path: 'starter', component: StarterComponent },
       { path: 'mygroup', component: StarterMyGroupComponent },
       { path: 'search', component: StarterSearchComponent },

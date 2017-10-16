@@ -12,7 +12,7 @@ export class User {
 })
 export class AppComponent {
 
-    title = 'Tour of Heroes';
+
   
 }
 

@@ -31,6 +31,6 @@ export class StarterComponent implements OnInit, OnDestroy {
 
 }
 function Checkrole() {
-  var role = "pilote"
+
 
 }
