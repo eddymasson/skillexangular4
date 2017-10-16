@@ -15,13 +15,6 @@ export class ListMainComponent implements OnInit {
 
   role = 'pilote';
 
-
-
-  myskills: Skills[] = [
-    { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
-    ];
-  
     public items:Array<string> = ['C++', 'C#', 'oracle', 'grails',
     'java', 'J2E', '.net', 'Management', 'PERT', 'GANTT',
     ];

@@ -23,7 +23,8 @@ export class StarterContentComponent implements OnInit {
 
   ngOnInit() {
     // Update the AdminLTE layouts
-
+    
+    // Récupération du role en session
     this.localStorage.setItem('role', 'pilote');
     //on affiche l'item de session 
     console.log(this.localStorage.getItem('role'));
