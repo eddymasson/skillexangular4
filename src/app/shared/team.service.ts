@@ -1,7 +1,7 @@
 import { Injectable }    from '@angular/core';  
-import {Team } from '../class/team';
-import {Http, Response,Headers,RequestOptions} from '@angular/http';
 import { User } from '../class/user';  
+import {Http, Response,Headers,RequestOptions} from '@angular/http';
+import {Team } from '../class/team';  
 import 'rxjs/add/operator/map';  
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -12,15 +12,15 @@ import 'rxjs/add/operator/toPromise';
   
 
 @Injectable()
-export class SrvUserService {
+export class SrvTeamService  {
 
-  urlUser='http://192.168.72.105/api/user/';
+  urlTeam='http://192.168.72.105/api/team/';
 
   constructor(private _http: Http) {  }
 
-  getUserById(id,apikey): Observable<User> { 
+  getTeamById(id,apikey): Observable<Team> { 
     //return  this._http.get(this.urlFiche+'id').map((response : Response)=> <Fiche[]> response.json()).toPromise();
-    return  this._http.get(this.urlUser+id+'?apikey='+apikey).map((response : Response)=> <User> response.json()).catch(this.httpError);
+    return  this._http.get(this.urlTeam+id+'?apikey='+apikey).map((response : Response)=> <Team> response.json()).catch(this.httpError);
   }
 
 

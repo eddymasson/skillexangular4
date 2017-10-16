@@ -1,3 +1,4 @@
+export { Team } from '../class/team'; 
 
 export interface User {
   id: number;
