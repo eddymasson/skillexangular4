@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 
-export class User {
-  id: number;
-  name: string;
-}
+
 
 @Component({
   selector: 'app-root',

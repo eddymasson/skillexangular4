@@ -1,6 +1,5 @@
 <style>
   span {
-
     background-color: #fff;
      -webkit-animation: random 15s infinite;
      animation: random 15s infinite;
@@ -12,7 +11,6 @@
     60% { background-color: blue; }
     75% { background-color: white; }  
 }
-
 </style>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -30,16 +28,16 @@
   <!-- Main content -->
   <section class="content">
   
-    <!-- <div *ngFor="let user of users"> -->
+   <div *ngFor="let user of users">
     <div class="col-md-4">
    
       <div class="box box-widget widget-user ">
         <!-- Add the bg color to the header using any of the bg-* classes -->
         <div class="widget-user-header bg-aqua-active">
           
-          <h3 class="widget-user-username"> {{user.info.name}}  {{user.info.prenom}} </h3>
+          <h3 class="widget-user-username"> {{user.name}} </h3>
           
-          <h5 class="widget-user-desc">{{user.info.mail}}</h5>
+          <h5 class="widget-user-desc">{{user.id}}</h5>
           <div class="widget-user-image">
               <img class="img-circle" src="https://vignette.wikia.nocookie.net/injusticegodsamongus/images/3/38/Superman_avatar.jpeg/revision/latest?cb=20130330035714" alt="User Avatar">
             </div>
@@ -51,11 +49,11 @@
              <div class="tab-content">
                 <hr>
         <strong><i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
-        <div *ngFor="let skills of myskills">
+        <div *ngFor="let skill of skills">
           <div class="col-md-3">
-            <span class="label label-success  col-md-12 random">{{skills.name}}</span>
+            <span class="label label-success  col-md-12 random">{{skill.name}}</span>
             <div>
-              <i *ngFor="let skills of myskills" class="fa fa-star"></i>
+              <i *ngFor="let skills of skills" class="fa fa-star"></i>
             </div>
           </div>  
         </div>
@@ -67,9 +65,9 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
-
+</div>
 
   <!-- /.content 
 </div>-->
-

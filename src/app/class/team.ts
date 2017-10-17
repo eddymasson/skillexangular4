@@ -7,4 +7,5 @@ export interface Team {
      createdAt: Date;
      pilote: User;
      module: Module;
+  users : Array<{user}>;
   }

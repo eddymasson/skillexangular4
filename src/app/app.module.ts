@@ -35,6 +35,10 @@ import { CoolStorageModule } from 'angular2-cool-storage';
 import { SelectModule } from 'ng2-select';
 import { HttpModule} from '@angular/http';
 
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './shared/in-memory-data.service';
+
 
 @NgModule({
   //Déclaration des divers composants pour pouvoir les utiliser par la suite
@@ -52,15 +56,17 @@ import { HttpModule} from '@angular/http';
     StarterMySkillsComponent,
     StarterSearchComponent,
     StarterControlSidebarComponent,
+    
     StarterListComponent,
     ListMainComponent,
     StarterSkillsManagementComponent,
-    SkillsManagementMainComponent
+    SkillsManagementMainComponent,
+    
   ],
   imports: [
     HttpModule ,
     //cool storage : import : 
-    
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
     CoolStorageModule, 
     SelectModule,
     BrowserModule,

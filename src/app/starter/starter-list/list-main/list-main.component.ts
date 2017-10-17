@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../../../class/user'
-import {Skills} from '../../../class/skills'
+import {Skill} from '../../../class/skill'
 import {SelectModule} from 'ng2-select';
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;

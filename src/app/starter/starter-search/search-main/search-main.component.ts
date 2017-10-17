@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../../../class/user'
-import {Skills} from '../../../class/skills'
+import {Skill} from '../../../class/skill'
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -14,11 +14,6 @@ export class SearchMainComponent implements OnInit {
 
 
 
-  myskills: Skills[] = [
-    { id: 1, name: 'PHP', level:3},
-    { id: 2, name: 'Oracle', level:3}
-    ];
-  
 
   constructor() { 
 
