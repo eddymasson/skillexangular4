@@ -19,8 +19,17 @@ export class SrvSkillService  {
 
   urlSkills='api/skills';
   urlSkillsAPI='api/skills';
+  urlUsers='api/users';
+  private headers = new Headers({'Content-Type': 'application/json'});
   constructor(private _http: Http) {  }
 
+  create(name: string): Promise<Skill> {
+    return this._http
+      .post(this.urlUsers, JSON.stringify({name: name}), {headers: this.headers})
+      .toPromise()
+      .then(res => res.json().data as Skill)
+      .catch(this.handleError);
+  }
   getAllSkills(): Promise<Skill> { 
     //return  this._http.get(this.urlFiche+'id').map((response : Response)=> <Fiche[]> response.json()).toPromise();
     return this._http.get(this.urlSkills)

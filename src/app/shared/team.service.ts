@@ -3,6 +3,7 @@ import { User } from '../class/user';
 import {Http, Response,Headers,RequestOptions} from '@angular/http';
 
 import {Team } from '../class/team';  
+import {Skill } from '../class/Skill';  
 import 'rxjs/add/operator/map';  
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -17,9 +18,10 @@ import 'rxjs/add/operator/toPromise';
 export class SrvTeamService  {
 
   urlUsers='api/users';
-
+  private headers = new Headers({'Content-Type': 'application/json'});
   constructor(private _http: Http) {  }
 
+  
   getTeamById(id,apikey): Observable<Team> { 
     //return  this._http.get(this.urlFiche+'id').map((response : Response)=> <Fiche[]> response.json()).toPromise();
     return  this._http.get(this.urlUsers+id+'?apikey='+apikey).map((response : Response)=> <Team> response.json()).catch(this.httpError);
@@ -41,5 +43,6 @@ export class SrvTeamService  {
     console.error('error :: ',error);
     return Observable.throw (error.json().error || 'Server error');  
 }
+
 
 }

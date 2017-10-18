@@ -11,13 +11,13 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 16, name: 'Melody' , Skill : [ { 'Name' : 'Oracle', 'Level': 2 }, { 'Name' : 'Java', 'Level': 7 }],  },
     ];
     const skills = [
-      {  id: 1, name: 'PHP', libelle :'test', description : 'test', brancheparente : null },
-      { id: 2, name: 'typescript', libelle :'test', description : 'test', brancheparente : null },
-      {  id:3 , name: 'Javascript', libelle :'test', description : 'test', brancheparente : null },
-      {  id: 4, name: 'JAVA', libelle :'test', description : 'test', brancheparente : null},
-      {  id: 5, name: 'Management', libelle :'test', description : 'test', brancheparente : null },
-      {  id: 6, name: 'Angular', libelle :'test', description : 'test', brancheparente : null },
-      {  id: 7, name: 'Oracle', libelle :'test', description : 'test', brancheparente : null}
+      {  id: 1, name: 'PHP' },
+      { id: 2, name: 'typescript' },
+      {  id:3 , name: 'Javascript' },
+      {  id: 4, name: 'JAVA'},
+      {  id: 5, name: 'Management' },
+      {  id: 6, name: 'Angular' },
+      {  id: 7, name: 'Oracle'}
     ];
     return {users,skills};
   }

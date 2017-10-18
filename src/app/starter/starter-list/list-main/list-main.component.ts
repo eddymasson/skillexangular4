@@ -2,17 +2,35 @@ import { Component, OnInit } from '@angular/core';
 import {User} from '../../../class/user'
 import {Skill} from '../../../class/skill'
 import {SelectModule} from 'ng2-select';
+import {SrvSkillService} from '../../../shared/skill.service'
+
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
 
 @Component({
   selector: 'app-list-main',
-  templateUrl: './list-main.component.html'
+  templateUrl: './list-main.component.html',
+  providers: [SrvSkillService],
 })
 
-export class ListMainComponent implements OnInit {
 
+export class ListMainComponent implements OnInit {
+  
+  constructor(private skillSrv: SrvSkillService) { 
+    
+      }
+  skills: Skill[];
+    selectedSkill: Skill;
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.skillSrv.create(name)
+      .then(skill => {
+        this.skills.push(skill);
+        this.selectedSkill = null; 
+      });
+  }
   role = 'pilote';
 
     public items:Array<string> = ['C++', 'C#', 'oracle', 'grails',
@@ -48,9 +66,6 @@ export class ListMainComponent implements OnInit {
     this.value = value;
   }
 
-  constructor() { 
-
-  }
 
   ngOnInit() {
     // Update the AdminLTE layouts
@@ -59,8 +74,3 @@ export class ListMainComponent implements OnInit {
 
 }
 
-
-
-export class SingleDemoComponent {
-
-}

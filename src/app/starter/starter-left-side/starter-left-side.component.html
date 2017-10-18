@@ -36,10 +36,10 @@
       <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/list" routerLinkActive="active" ><i class="fa fa-gear"></i> <span>Configurer</span></a></li>
       <li><a routerLink="/myskills" routerLinkActive="active" ><i class="fa fa-cubes"></i> <span>Saisir mes compétences</span></a></li>
     <!--   <li><a routerLink="/skills-management" routerLinkActive="active" ><i class="fa fa-list"></i> <span>Liste des compétences</span></a></li> -->
-      <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/list" routerLinkActive="active" ><i class="fa fa-list"></i> <span>Rechercher</span></a></li>
+      <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/search" routerLinkActive="active" ><i class="fa fa-list"></i> <span>Rechercher</span></a></li>
     <!--  <li><a *ngIf="role=='pilote'||role=='maitre'" routerLink="/starter" routerLinkActive="active" ><i class="fa fa-check"></i> <span>Valider des compétences</span></a></li> -->
       <li class="treeview">
-        <a *ngIf="role=='maitre'" href="#"><i class="fa fa-link"></i> <span>Paramèrtes</span>
+        <a *ngIf="role=='maitre'" href="#"><i class="fa fa-link"></i> <span>Paramètres</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

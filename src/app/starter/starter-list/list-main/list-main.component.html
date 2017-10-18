@@ -18,7 +18,7 @@
           <thead>
          <h3>Liste des compétences</h3>
          <div>
-            <label>Compétence:</label> <input #SkillName />
+            <label>Compétence:</label> <input #skillName />
             <button (click)="add(skillName.value); skillName.value=''">
               Add
             </button>
@@ -63,7 +63,13 @@
       </table>
       <button (click)="save()">Save</button>  
       
-  
+      <ng-select  [multiple]="true"
+      [items]="items"
+      [disabled]="disabled"
+      (data)="refreshValue($event)"
+      (selected)="selected($event)"
+      (removed)="removed($event)"
+      placeholder="Selectionnez vos compétences"></ng-select>
                     <div class="col-md-9">
                       
   
