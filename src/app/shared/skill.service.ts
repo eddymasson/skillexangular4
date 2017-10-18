@@ -18,7 +18,7 @@ import 'rxjs/add/operator/toPromise';
 export class SrvSkillService  {
 
   urlSkills='api/skills';
-
+  urlSkillsAPI='api/skills';
   constructor(private _http: Http) {  }
 
   getAllSkills(): Promise<Skill> { 
