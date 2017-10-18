@@ -1,16 +1,27 @@
 <style>
   span {
     background-color: #fff;
-     -webkit-animation: random 15s infinite;
-     animation: random 15s infinite;
+    -webkit-animation: random 15s infinite;
+    animation: random 15s infinite;
   }
-@keyframes  random {
-    15% { background-color: blue; } 
-    30% { background-color: white; } 
-    45% { background-color: red; } 
-    60% { background-color: blue; }
-    75% { background-color: white; }  
-}
+
+  @keyframes random {
+    15% {
+      background-color: roya;
+    }
+    30% {
+      background-color: rgb(114, 48, 4);
+    }
+    45% {
+      background-color: red;
+    }
+    60% {
+      background-color: blue;
+    }
+    75% {
+      background-color: crimson;
+    }
+  }
 </style>
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -20,54 +31,59 @@
       <small>Si ce texte s'affiche le routing fonctionne</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Skillex </a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-dashboard"></i> Skillex </a>
+      </li>
       <li class="active">Equipe</li>
     </ol>
   </section>
   <!--Votre ID est  {{user.info.id}} votre nom est {{user.info.nom}} votre prénom est {{user.info.prenom}} votre mail est {{user.info.mail}} vous êtes {{user.info.jobname}} vous avez été créé le  {{user.info.c}}
   <!-- Main content -->
   <section class="content">
-  
-   <div *ngFor="let user of users">
-    <div class="col-md-4">
-   
-      <div class="box box-widget widget-user ">
-        <!-- Add the bg color to the header using any of the bg-* classes -->
-        <div class="widget-user-header bg-aqua-active">
-          
-          <h3 class="widget-user-username"> {{user.name}} </h3>
-          
-          <h5 class="widget-user-desc">{{user.id}}</h5>
-          <div class="widget-user-image">
-              <img class="img-circle" src="https://vignette.wikia.nocookie.net/injusticegodsamongus/images/3/38/Superman_avatar.jpeg/revision/latest?cb=20130330035714" alt="User Avatar">
+
+    <div *ngFor="let user of users">
+      <div class="col-md-4">
+
+        <div class="box box-widget widget-user ">
+          <!-- Add the bg color to the header using any of the bg-* classes -->
+          <div class="widget-user-header bg-aqua-active">
+
+            <h3 class="widget-user-username"> {{user.name}} </h3>
+
+            <h5 class="widget-user-desc">{{user.id}} </h5>
+
+            <div class="widget-user-image">
+              <img class="img-circle" src="https://vignette.wikia.nocookie.net/injusticegodsamongus/images/3/38/Superman_avatar.jpeg/revision/latest?cb=20130330035714"
+                alt="User Avatar">
             </div>
 
-        </div>
-        
-        <div class="nav-tabs-custom">
-            
-             <div class="tab-content">
-                <hr>
-        <strong><i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
-        <div *ngFor="let skill of skills">
-          <div class="col-md-3">
-            <span class="label label-success  col-md-12 random">{{skill.name}}</span>
-            <div>
-              <i *ngFor="let skills of skills" class="fa fa-star"></i>
-            </div>
-          </div>  
-        </div>
-        <div class="box-footer">  
-            <!-- /.row -->
           </div>
-               <hr>
-        </div>
+
+          <div class="nav-tabs-custom">
+
+            <div class="tab-content">
+              <hr>
+              <strong>
+                <i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
+              <div *ngFor="let Skill of user.Skill">
+              
+                  <div class="col-md-3">
+                    <span class="label label-success  col-md-12 random">{{Skill.Name}}</span>
+                    {{Skill.Level }}
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <!-- /.row -->
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
   </section>
-</div>
+  </div>
 
   <!-- /.content 
 </div>-->

@@ -9,6 +9,7 @@ import {Skill} from '../../../class/skill'
 import {SrvUserService} from '../../../shared/user.service'
 import {SrvSkillService} from '../../../shared/skill.service'
 import {SrvTeamService} from '../../../shared/team.service'
+
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -24,7 +25,6 @@ export class MyGroupMainComponent implements OnInit {
   skills: Skill;
   team: Team;
   usersinfo : Array<{info: Team, users : Array<{user : User,role :string}>;}>;
-
 
     // Method in component class
 trackByFn() {
@@ -43,6 +43,9 @@ constructor(private route: ActivatedRoute,localStorage: CoolLocalStorage,private
     this.teamSrv.getTeam()
     .then(users=> this.users = users);
 
+    this.teamSrv.getTeam()
+    .then(users=> this.users = users);
+    console.log (this); 
       
     this.skillSrv.getAllSkills()
     .then(skills=> this.skills = skills);

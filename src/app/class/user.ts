@@ -14,4 +14,5 @@ export interface User {
    activeUntil: Date;
    birthDate: Date;
    jobName: string;
+    
 }
