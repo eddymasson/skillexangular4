@@ -67,23 +67,33 @@
               <strong>
                 <i class="fa fa-pencil margin-r-5"></i> Compétences web </strong>
               <div *ngFor="let Skill of user.Skill">
-              
-                  <div class="col-md-3">
-                    <span class="label label-success  col-md-12 random">{{Skill.Name}}</span>
-                    {{Skill.Level }}
+
+                <div class="col-md-3">
+                  <span class="label label-success  col-md-12 random">{{Skill.Name}}</span>
+
+                  <div *ngIf="Skill.Level>=1">
+                    <i class="fa fa-star"></i>
+                    <i *ngIf="Skill.Level>=2" class="fa fa-star"> </i>
+                    <i *ngIf="Skill.Level>=3" class="fa fa-star"> </i>
+                    <i *ngIf="Skill.Level>=4" class="fa fa-star"> </i>
+                    <i *ngIf="Skill.Level>=5" class="fa fa-star"> </i>
                   </div>
+
+
+
                 </div>
-                <div class="box-footer">
-                  <!-- /.row -->
-                </div>
-                <hr>
               </div>
+              <div class="box-footer">
+                <!-- /.row -->
+              </div>
+              <hr>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
-  </div>
+</div>
 
-  <!-- /.content 
+<!-- /.content 
 </div>-->

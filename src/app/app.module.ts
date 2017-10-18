@@ -56,7 +56,6 @@ import { InMemoryDataService }  from './shared/in-memory-data.service';
     StarterMySkillsComponent,
     StarterSearchComponent,
     StarterControlSidebarComponent,
-    
     StarterListComponent,
     ListMainComponent,
     StarterSkillsManagementComponent,
