@@ -19,19 +19,23 @@ export class ListMainComponent implements OnInit {
   constructor(private skillSrv: SrvSkillService) { 
     
       }
-      skills: Skill;
-        skillsList: Skill[];
-  selectedSkill: Skill;
+skills: Skill[] =[];
+
+selectedSkill: Skill;
       add(name: string): void {
         name = name.trim();
         if (!name) { return; }
         this.skillSrv.create(name)
           .then(skill => {
-            this.skillsList.push(skill);
+            this.skills.push(skill);
             this.selectedSkill = null;
           });
       }
-
+      getAllSkills(): void {
+        this.skillSrv
+            .getAllSkills()
+            .then(skills => this.skills = skills);
+      }
 
   role = 'pilote';
 
@@ -69,11 +73,11 @@ export class ListMainComponent implements OnInit {
   }
 
 
-  ngOnInit() {
-
-    this.skillSrv.getAllSkills()
-    .then(skills=> this.skills = skills);
+  ngOnInit() : void {
+    this.getAllSkills();
+  
     // Update the AdminLTE layouts
+  
     AdminLTE.init();
   }
 

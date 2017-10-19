@@ -47,8 +47,7 @@ constructor(private route: ActivatedRoute,localStorage: CoolLocalStorage,private
     .then(users=> this.users = users);
     console.log (this); 
       
-    this.skillSrv.getAllSkills()
-    .then(skills=> this.skills = skills);
+ 
 
     AdminLTE.init();
     

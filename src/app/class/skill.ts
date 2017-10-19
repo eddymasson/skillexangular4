@@ -1,9 +1,8 @@
-class Skill {
-  constructor(
-    public id: number,
-    public name: string,
-    public libelle: string,
-    public description: string, 
-    public brancheparente : Skill ) { }
+export class Skill {
+
+ id: number;
+name: string;
+   libelle: string;
+    description: string;
+ brancheparente : Skill ;
 }
-export {Skill} 
