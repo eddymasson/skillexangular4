@@ -17,7 +17,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {  id: 4, name: 'JAVA'},
       {  id: 5, name: 'Management' },
       {  id: 6, name: 'Angular' },
-      {  id: 7, name: 'Oracle'}
+      {  id: 7, name: 'Oracle'},
+      {  id: 6, name: 'C#' },
+      {  id: 7, name: 'Vagrant'}
     ];
     return {users,skills};
   }
