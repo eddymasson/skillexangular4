@@ -25,11 +25,8 @@ export class SrvSkillService  {
 
   create(name: string): Promise<Skill> {
     return this._http
-<<<<<<< HEAD
-    .post(this.urlUsers, JSON.stringify({name: name}), {headers: this.headers})
-=======
+
       .post(this.urlSkills, JSON.stringify({name: name}), {headers: this.headers})
->>>>>>> a13f5ac9c6aa1a59e8e843a1f367bbf23ab9b504
       .toPromise()
       .then(res => res.json().data as Skill)
       .catch(this.handleError);
