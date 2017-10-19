@@ -8,9 +8,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 13, name: 'Eddy', Skill : [ { 'Name' : 'Oracle', 'Level': 2 }, { 'Name' : 'Java', 'Level': 4 }],  },
       { id: 14, name: 'Douglas', Skill : [ { 'Name' : 'Oracle', 'Level': 0 }, { 'Name' : 'Java', 'Level': 5 }],  },
       { id: 15, name: 'Yelan' ,Skill : [ { 'Name' : 'Oracle', 'Level': 2 }, { 'Name' : 'Java', 'Level': 0 }],  },
-      { id: 16, name: 'Melody' , Skill : [ { 'Name' : 'Oracle', 'Level': 2 }, { 'Name' : 'Java', 'Level': 7 }],  }, 
-      
-    },
+      { id: 16, name: 'Melody' , Skill : [ { 'Name' : 'Oracle', 'Level': 2 }, { 'Name' : 'Java', 'Level': 7 }],  },
     ];
     const skills = [
       {  id: 1, name: 'PHP' },
