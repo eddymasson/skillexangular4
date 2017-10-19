@@ -19,8 +19,19 @@ export class ListMainComponent implements OnInit {
   constructor(private skillSrv: SrvSkillService) { 
     
       }
-  skills: Skill;
+      skills: Skill;
+        skillsList: Skill[];
   selectedSkill: Skill;
+      add(name: string): void {
+        name = name.trim();
+        if (!name) { return; }
+        this.skillSrv.create(name)
+          .then(skill => {
+            this.skillsList.push(skill);
+            this.selectedSkill = null;
+          });
+      }
+
 
   role = 'pilote';
 
