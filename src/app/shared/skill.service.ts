@@ -25,6 +25,7 @@ export class SrvSkillService  {
 
   create(name: string): Promise<Skill> {
     return this._http
+
       .post(this.urlSkills, JSON.stringify({name: name}), {headers: this.headers})
       .toPromise()
       .then(res => res.json().data as Skill)
