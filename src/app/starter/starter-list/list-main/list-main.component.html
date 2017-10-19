@@ -19,7 +19,7 @@
          <h3>Liste des compétences</h3>
          <div>
             <label>Compétence:</label> <input #skillName />
-            <button (click)="add(skillName.value); skillName.value=''">
+            <button (click)="add(skill.Name.value); skill.Name.value=''">
               Add
             </button>
           </div>
@@ -27,36 +27,12 @@
           
           </thead>
           <tbody>
-          <tr>
+          <tr *ngFor="let skill of skills">
 
-            <td class="mailbox-subject"><b>Angular</b></td>
+            <td class="mailbox-subject"><b>{{skill.name}}</b></td>
    
           </tr>
-          <tr>
-
-            <td class="mailbox-subject"><b>Synfony</b></td>
          
-          </tr>
-          <tr>
-
-            <td class="mailbox-subject"><b>HTML</b></td>
-         
-          </tr>
-          <tr>
-
-            <td class="mailbox-subject"><b>CSS</b></td>
-            
-          </tr>
-          <tr>
-
-            <td class="mailbox-subject"><b>Javascript</b></td>
-        
-          </tr>
-          <tr>
-
-            <td class="mailbox-subject"><b>J2EE</b></td>
-            
-          </tr>
 
 
         </tbody>

@@ -3,7 +3,6 @@ import {User} from '../../../class/user'
 import {Skill} from '../../../class/skill'
 import {SelectModule} from 'ng2-select';
 import {SrvSkillService} from '../../../shared/skill.service'
-
 // Variable in assets/js/scripts.js file
 declare var AdminLTE: any;
 
@@ -20,17 +19,9 @@ export class ListMainComponent implements OnInit {
   constructor(private skillSrv: SrvSkillService) { 
     
       }
-  skills: Skill[];
-    selectedSkill: Skill;
-  add(name: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.skillSrv.create(name)
-      .then(skill => {
-        this.skills.push(skill);
-        this.selectedSkill = null; 
-      });
-  }
+  skills: Skill;
+  selectedSkill: Skill;
+
   role = 'pilote';
 
     public items:Array<string> = ['C++', 'C#', 'oracle', 'grails',
@@ -68,6 +59,9 @@ export class ListMainComponent implements OnInit {
 
 
   ngOnInit() {
+
+    this.skillSrv.getAllSkills()
+    .then(skills=> this.skills = skills);
     // Update the AdminLTE layouts
     AdminLTE.init();
   }
