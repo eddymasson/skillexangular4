@@ -57,6 +57,14 @@ selectedSkill: Skill;
   }
  
   public selected(value:any):void {
+    console.log(value.id);
+    if (!value.id) { return; }
+    this.skillSrv.create(value.id)
+      .then(skill => {
+        this.skills.push(skill);
+        this.selectedSkill = null;
+      });
+
     console.log('Selected value is: ', value);
   }
  
