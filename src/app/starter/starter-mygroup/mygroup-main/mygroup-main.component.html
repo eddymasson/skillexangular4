@@ -1,8 +1,8 @@
 <style>
   span {
     background-color: #fff;
-    -webkit-animation: random 15s infinite;
-    animation: random 15s infinite;
+    -webkit-animation: random 300ms infinite;
+    animation: random 300ms infinite;
   }
 
   @keyframes random {
@@ -71,7 +71,7 @@
                 <div class="col-md-3">
                   <span class="label label-success  col-md-12 random">{{Skill.Name}}</span>
 
-                  <div > <i *ngIf="Skill.Level>0" class="fa fa-star"></i><i *ngIf="Skill.Level<=0" class="fa fa-star-o"> </i>
+                  <div > <i *ngIf="Skill.Level>0" class="fa fa-star"></i><i *ngIf="Skill.Level<=0" class="fa fa-star text-green"> </i>
                     <i *ngIf="Skill.Level>=2" class="fa fa-star"> </i><i *ngIf="Skill.Level<2" class="fa fa-star-o"> </i>
                     <i *ngIf="Skill.Level>=3" class="fa fa-star"> </i><i *ngIf="Skill.Level<3" class="fa fa-star-o"> </i>
                     <i *ngIf="Skill.Level>=4" class="fa fa-star"> </i><i *ngIf="Skill.Level<4" class="fa fa-star-o"> </i>
